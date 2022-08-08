@@ -3,6 +3,9 @@
       "baseUrl": "src",
       "paths": {
          "@pages/*": ["pages/*"],
+         "@layout/*": ["layout/*"],
+         "@components/*": ["components/*"],
+         "@common/*": ["common/*"],
          "@styles/*": ["styles/*"]
       }
    }

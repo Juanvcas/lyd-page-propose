@@ -1,0 +1,40 @@
+.main {
+   width: 100%;
+   height: auto;
+}
+
+.main__banner {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 60rem;
+   padding: 0 2rem;
+   background-image: url('https://i.postimg.cc/Hsys0xjL/Musa-Plywood.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.main__banner > h1 {
+   font-size: 3.6rem;
+   font-weight: 700;
+   text-align: center;
+   color: white;
+}
+
+.main__banner > a {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: auto;
+   height: auto;
+   margin-top: 2.4rem;
+   padding: 1rem 2rem;
+   font-size: 2rem;
+   font-weight: 500;
+   text-decoration: none;
+   color: white;
+   border: 0.2rem solid white;
+}
