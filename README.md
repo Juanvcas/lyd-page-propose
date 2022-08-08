@@ -1,1 +1,1 @@
-This is a propose project for Lineas y Diseños.
+This is a project propose for a forniture company.
