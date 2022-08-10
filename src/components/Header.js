@@ -1,13 +1,18 @@
 import { useState, useEffect } from 'react';
 import HeaderMenu from 'common/HeaderMenu';
+import ShoppingCart from '@components/ShoppingCart';
+import { BiMenu, BiCartAlt } from 'react-icons/bi';
 import styles from '@styles/Header.module.css';
 
 const Header = () => {
    const [menuToggle, setMenuToggle] = useState(false);
+   const [cartToggle, setCartToggle] = useState(false);
    const toggleMenu = () => {
       setMenuToggle(!menuToggle);
    };
    useEffect(() => {
+      console.log(window.innerWidth);
+      window.innerHeight >= 652 ? setMenuToggle(true) : setMenuToggle(false);
       addEventListener('resize', () => {
          if (window.innerWidth >= 768) {
             setMenuToggle(true);
@@ -15,17 +20,20 @@ const Header = () => {
             setMenuToggle(false);
          }
       });
-      addEventListener('load', () => {
-         window.innerHeight >= 768 ? setMenuToggle(true) : setMenuToggle(false);
-      });
    }, []);
    return (
       <header className={styles.header}>
          <figure className={styles.header__logo}>
             <img src="https://i.postimg.cc/QxBddLwB/Logo-white.png" alt="lyd-logo" />
          </figure>
-         <span className={styles['menu-span']} onClick={() => toggleMenu()}></span>
+         <span className={styles['menu-span']} onClick={() => toggleMenu()}>
+            <BiMenu />
+         </span>
          {menuToggle && <HeaderMenu menuToggle={menuToggle} setMenuToggle={setMenuToggle} />}
+         <div className={styles.header__cart}>
+            <BiCartAlt />
+         </div>
+         {cartToggle && <ShoppingCart cartToggle={cartToggle} setCartToggle={setCartToggle} />}
       </header>
    );
 };

@@ -37,4 +37,255 @@
    text-decoration: none;
    color: white;
    border: 0.2rem solid white;
+   border-radius: 0.5rem;
+}
+
+.main__articles {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   height: auto;
+}
+
+.articles__sect {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 40rem;
+   padding: 0 2rem;
+}
+
+.articles__sect:nth-child(1) {
+   background-image: url('https://i.postimg.cc/3Rsx3W8J/HO-BTT2-Post03.png');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.articles__sect:nth-child(2) {
+   background-image: url('https://i.postimg.cc/Wpx1tDpV/01-min.png');
+   background-size: cover;
+   background-position: right;
+   background-repeat: no-repeat;
+}
+
+.articles__sect h3 {
+   font-size: 2.4rem;
+   font-weight: 500;
+   text-align: center;
+   color: white;
+}
+
+.articles__sect a {
+   margin-top: 2.4rem;
+   padding: 1rem 2rem;
+   /* background-color: #00000022; */
+   font-size: 2rem;
+   font-weight: 500;
+   color: white;
+   text-decoration: none;
+   border: 0.2rem solid white;
+   border-radius: 0.5rem;
+}
+
+.main__catalog {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 40rem;
+   background-image: url('https://i.postimg.cc/d0y4xDwR/Catalogo.png');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.main__catalog h2 {
+   font-size: 2.4rem;
+   font-weight: 500;
+   text-align: center;
+   color: white;
+}
+
+.main__catalog a {
+   margin-top: 2.4rem;
+   padding: 1rem 2rem;
+   font-size: 2rem;
+   font-weight: 500;
+   color: white;
+   text-decoration: none;
+   border: 0.2rem solid white;
+   border-radius: 0.5rem;
+}
+
+.main__projects,
+.main__news {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: auto;
+   padding: 2rem 1rem;
+}
+
+.main__projects > a {
+   margin-top: 2.4rem;
+   padding: 1rem 2rem;
+   font-size: 2rem;
+   font-weight: 500;
+   color: black;
+   text-decoration: none;
+   border: 0.2rem solid black;
+   border-radius: 0.5rem;
+}
+
+.main__projects > h2,
+.main__news h2 {
+   font-size: 2.4rem;
+   font-weight: 500;
+   text-align: center;
+}
+
+.projects__cont,
+.news__cont {
+   display: flex;
+   align-items: center;
+   overflow-x: auto;
+   width: 100%;
+   height: auto;
+}
+
+.projects__sect,
+.news__sect {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   min-width: 100%;
+   height: 40rem;
+   margin-top: 2rem;
+   padding: 0 2rem;
+}
+
+.projects__sect:nth-child(1) {
+   background-image: url('https://i.postimg.cc/ydGwHbkq/constructora-bayith.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.projects__sect:nth-child(2) {
+   background-image: url('https://i.postimg.cc/prn3XJFm/universidad-nacional.jpg');
+   background-size: cover;
+   background-position: right;
+   background-repeat: no-repeat;
+}
+
+.projects__sect h3 {
+   font-size: 2.4rem;
+   font-weight: 500;
+   text-align: center;
+   color: white;
+}
+
+.projects__sect a {
+   margin-top: 2.4rem;
+   padding: 1rem 2rem;
+   font-size: 2rem;
+   font-weight: 500;
+   color: white;
+   text-decoration: none;
+   border: 0.2rem solid white;
+   border-radius: 0.5rem;
+}
+
+.news__sect {
+   justify-content: start;
+   height: auto;
+}
+
+.sect__img {
+   position: relative;
+   display: block;
+   width: 100%;
+   height: 25rem;
+}
+
+.sect__img img {
+   width: 100%;
+   object-fit: cover;
+   object-position: center;
+}
+
+.news__sect h3 {
+   font-size: 2.4rem;
+   font-weight: 500;
+   text-align: center;
+}
+
+.news__sect p {
+   font-size: 2rem;
+   font-weight: 400;
+   text-align: center;
+}
+
+.news__sect a {
+   margin-top: 2.4rem;
+   padding: 1rem 2rem;
+   font-size: 2rem;
+   font-weight: 500;
+   color: black;
+   text-decoration: none;
+   border: 0.2rem solid black;
+   border-radius: 0.5rem;
+}
+
+@media (min-width: 768px) {
+   .main__banner {
+      height: 70rem;
+   }
+
+   .main__articles {
+      flex-direction: row;
+   }
+
+   .articles__sect {
+      padding: 0 4em;
+   }
+
+   .projects__sect,
+   .news__sect {
+      min-width: 0;
+      width: 100%;
+      margin: 2rem 1rem 0;
+   }
+}
+
+@media (min-width: 1024px) {
+   .main__banner {
+      height: 80rem;
+   }
+
+   .articles__sect {
+      height: 60rem;
+      padding: 0 8em;
+   }
+
+   .main__catalog {
+      height: 60rem;
+   }
+
+   .main__projects,
+   .main__news {
+      padding: 4rem 4rem 8rem;
+   }
+
+   .projects__sect,
+   .news__sect {
+      margin: 4rem 3rem 0;
+   }
 }
