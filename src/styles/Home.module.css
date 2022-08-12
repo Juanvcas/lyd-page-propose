@@ -18,6 +18,7 @@
 }
 
 .main__banner > h1 {
+   max-width: 50rem;
    font-size: 3.6rem;
    font-weight: 700;
    text-align: center;
@@ -203,6 +204,10 @@
    border-radius: 0.5rem;
 }
 
+.news__cont {
+   align-items: flex-start;
+}
+
 .news__sect {
    justify-content: start;
    height: auto;
@@ -219,6 +224,7 @@
    width: 100%;
    object-fit: cover;
    object-position: center;
+   z-index: -1;
 }
 
 .news__sect h3 {
