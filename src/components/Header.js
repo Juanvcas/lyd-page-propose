@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 import HeaderMenu from 'common/HeaderMenu';
 import ShoppingCart from '@components/ShoppingCart';
 import { BiMenu, BiCartAlt } from 'react-icons/bi';
@@ -20,9 +21,11 @@ const Header = () => {
    }, []);
    return (
       <header className={styles.header}>
-         <figure className={styles.header__logo}>
-            <img src="https://i.postimg.cc/QxBddLwB/Logo-white.png" alt="lyd-logo" />
-         </figure>
+         <Link href={'/'}>
+            <a className={styles.header__logo}>
+               <img src="https://i.postimg.cc/QxBddLwB/Logo-white.png" alt="lyd-logo" />
+            </a>
+         </Link>
          <span className={styles['menu-span']} onClick={() => setMenuToggle(!menuToggle)}>
             <BiMenu />
          </span>

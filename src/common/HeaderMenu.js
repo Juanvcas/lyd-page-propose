@@ -12,6 +12,7 @@ const HeaderMenu = ({ menuToggle, setMenuToggle }) => {
             <span className={styles['nav-span']} onClick={() => toggleMenu()}>
                <BiX />
             </span>
+            <Link href={'/Shop'}>Tienda</Link>
             <Link href={'/'}>Productos</Link>
             <Link href={'/'}>Proyectos</Link>
             <Link href={'/'}>Blog</Link>
