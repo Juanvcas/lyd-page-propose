@@ -1,0 +1,3 @@
+const useHeaderStyles = () => {};
+
+export { useHeaderStyles };

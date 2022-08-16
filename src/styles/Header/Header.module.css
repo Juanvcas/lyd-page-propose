@@ -6,6 +6,8 @@
    width: 100%;
    height: 6rem;
    padding: 0 1.5rem;
+   background-color: white;
+   z-index: 100;
 }
 
 .header__logo {
@@ -15,6 +17,7 @@
 
 .header__logo img {
    width: 100%;
+   filter: invert(68%);
 }
 
 .menu-span {
@@ -26,7 +29,7 @@
 .menu-span > svg {
    width: 100%;
    height: 100%;
-   color: white;
+   color: var(--darkGray);
 }
 
 .header__menu {
@@ -35,6 +38,7 @@
    height: 100vh;
    top: 0;
    left: 0;
+   z-index: 100;
 }
 
 .nav-span {
@@ -78,7 +82,7 @@
 .header__cart > svg {
    width: 100%;
    height: 100%;
-   color: white;
+   color: var(--darkGray);
 }
 
 @media (min-width: 768px) {
@@ -110,7 +114,7 @@
    }
 
    .menu__nav a {
-      color: white;
+      color: var(--darkGray);
       margin-top: 0;
       padding: 0 1.5rem;
       font-size: 2rem;

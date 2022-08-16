@@ -36,7 +36,7 @@ const ShoppingCart = ({ cartToggle, setCartToggle }) => {
                   <p>Total</p>
                   <p>$850000</p>
                </div>
-               <button className={styles['shopcart__chk-butt']}>Checkout</button>
+               <button className={styles['shopcart__chk-butt']}>Ir a pagar</button>
             </section>
          </aside>
       </>
