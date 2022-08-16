@@ -14,7 +14,7 @@ const ShopProduct = () => {
    return (
       <>
          <article className={styles.item__cont}>
-            <Link href={'/Shop'}>
+            <Link href={'/shop/products/1'}>
                <a className={styles.item__image}>
                   <Image src={item.image} width={500} height={500} layout="responsive" />
                </a>
