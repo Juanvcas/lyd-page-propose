@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import ShopProduct from '@components/Products/ShopProduct';
+import { BiSearch } from 'react-icons/bi';
 import styles from '@styles/Shop/Shop.module.css';
 
 const Shop = () => {
@@ -16,7 +17,6 @@ const Shop = () => {
       { category: 'Accesorios' },
       { category: 'Muebles especiales' },
    ];
-   useEffect(() => {}, []);
    return (
       <>
          <main className={styles.main}>
@@ -46,7 +46,7 @@ const Shop = () => {
                         <form className={styles['nav-filters']}>
                            <div className={styles['filters-opt']}>
                               <p>Ordenar por:</p>
-                              <select>
+                              <select title="ordenar por">
                                  <option value={'ordenar'}>ordenar</option>
                                  {/* {categories.map((cat) => {
                                     <option value={cat.category}>{cat.category}</option>;
@@ -55,24 +55,41 @@ const Shop = () => {
                            </div>
                            <div className={styles['filters-opt']}>
                               <p>Categoria:</p>
-                              <select>
+                              <select title="categoria">
                                  <option value={'categoria'}>categoria</option>
                                  {/* {categories.map((cat) => {
                                     <option value={cat.category}>{cat.category}</option>;
                                  })} */}
                               </select>
                            </div>
-                           <button type="submit">Filtrar</button>
+                           <button className={styles['filters-butt']} type="submit">
+                              Filtrar
+                           </button>
                         </form>
-                        <div className={styles['nav-search']}>
+                        <label className={styles['nav-search']}>
                            <input type={'text'} placeholder={'Buscar producto'} />
-                        </div>
+                           <span>
+                              <BiSearch />
+                           </span>
+                        </label>
                      </nav>
                   </div>
                   <div className={styles.products__list}>
                      <ShopProduct />
+                     <ShopProduct />
+                     <ShopProduct />
+                     <ShopProduct />
+                     <ShopProduct />
+                     <ShopProduct />
                   </div>
                </section>
+            </section>
+            <section className={styles.main__contact}>
+               <h3>Te asesoramos en lo que necesites</h3>
+               <p>Cuentanos como podemos ayudarte y encontraremos el mejor producto para ti</p>
+               <Link href={'/Shop'}>
+                  <a>Contactanos</a>
+               </Link>
             </section>
          </main>
       </>

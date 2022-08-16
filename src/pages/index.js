@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import { useHeaderStyles } from '@hooks/useHeaderStyles';
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';

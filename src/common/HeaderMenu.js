@@ -8,7 +8,7 @@ const HeaderMenu = ({ menuToggle, setMenuToggle }) => {
    };
    return (
       <menu className={styles.header__menu}>
-         <nav className={styles.menu__nav}>
+         <nav className={styles.menu__nav} id="menu-nav">
             <span className={styles['nav-span']} onClick={() => toggleMenu()}>
                <BiX />
             </span>
