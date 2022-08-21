@@ -13,7 +13,7 @@ const HeaderMenu = ({ menuToggle, setMenuToggle }) => {
                <BiX />
             </span>
             <Link href={'/shop'}>Tienda</Link>
-            <Link href={'/'}>Productos</Link>
+            <Link href={'/products'}>Productos</Link>
             <Link href={'/'}>Proyectos</Link>
             <Link href={'/'}>Blog</Link>
          </nav>

@@ -25,7 +25,7 @@
 
 .banner__slide h1 {
    font-size: 3.6rem;
-   font-weight: 500;
+   font-weight: 700;
 }
 
 .banner__slide h2 {
@@ -166,6 +166,35 @@
 
 .products__list article {
    margin: 1rem 0 0;
+}
+
+.products__categories {
+   width: 100%;
+   height: auto;
+   padding: 2rem;
+   background-color: var(--lightGray);
+}
+
+.products__categories h2 {
+   font-size: 2rem;
+   font-weight: 500;
+}
+
+.categories__cont {
+   position: relative;
+   display: flex;
+   width: 100%;
+   height: auto;
+   overflow-x: auto;
+}
+
+.categories__cont article {
+   max-width: 25rem;
+   margin-right: 1rem;
+}
+
+.categories__cont article p {
+   display: none;
 }
 
 .main__contact {

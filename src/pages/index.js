@@ -1,5 +1,3 @@
-import { useEffect } from 'react';
-import { useHeaderStyles } from '@hooks/useHeaderStyles';
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -14,7 +12,7 @@ export default function Home() {
          <main className={styles.main}>
             <section className={styles.main__banner}>
                <h1>Mobiliario hecho para el bienestar y confort</h1>
-               <Link href={'/Shop'}>Ver Muebles</Link>
+               <Link href={'/shop'}>Ver Muebles</Link>
             </section>
             <section className={styles.main__articles}>
                <div className={styles.articles__sect}>
@@ -28,7 +26,7 @@ export default function Home() {
             </section>
             <section className={styles.main__catalog}>
                <h2>Líneas diseñadas para perdurar</h2>
-               <Link href={'/'}>Conoce nuestro catalogo</Link>
+               <Link href={'/products'}>Conoce nuestro catalogo</Link>
             </section>
             <section className={styles.main__projects}>
                <h2>Nuevos Proyectos</h2>

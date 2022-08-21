@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useHeaderStyles } from '@hooks/useHeaderStyles';
-import Head from 'next/head';
 import HeaderMenu from 'common/HeaderMenu';
 import ShoppingCart from '@components/ShoppingCart';
 import { BiMenu, BiCartAlt } from 'react-icons/bi';
@@ -29,9 +28,6 @@ const Header = () => {
    }, []);
    return (
       <>
-         <Head>
-            <style id="hs"></style>
-         </Head>
          <header className={styles.header} id={'header'}>
             <Link href={'/'}>
                <a className={styles.header__logo}>
